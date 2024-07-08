@@ -12,7 +12,7 @@ const Profile: React.FC<ProfileProps> = ({ toggleNavbar }) => {
         <Navbar toggleNavbar={toggleNavbar} />
       </section>
       <section className="flex flex-col md:flex-row justify-center items-around h-full sm:py-4 py-20 sm:h-5/6 content-center">
-        <div className="flex h-full justify-center sm:items-center items-end px-10">
+        <div className="flex h-full justify-center sm:items-center items-start px-10">
           <img
             src="./profile.jpg"
             className="border-1 border-slate-900 object-cover rounded-full h-56 w-56 sm:h-72 sm:w-72"
