@@ -1,23 +1,36 @@
-import { useEffect, useState } from "react";
 import Profile from "./components/Profile";
-import NavbarModile from "./components/NavbarMobile";
 import About from "./components/About";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import ScrollUpButton from "./components/ScrollUpButton";
+import { useEffect, useState } from "react";
 
 function App() {
-  const [toggleNavbar, setToggleNavbar] = useState<boolean>(false);
+  const [renderScroll, setRenderScroll] = useState<boolean>(false);
   useEffect(() => {
-    console.log("navbar toggled", toggleNavbar);
-  }, [toggleNavbar]);
+    const handleScroll = () => {
+      if (window.pageYOffset > 500) {
+        setRenderScroll(true);
+      } else {
+        setRenderScroll(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <main className="bg-gradient-to-b from-slate-50 to-stone-300 m-0 p-0 border-0">
-      {toggleNavbar ? (
-        <NavbarModile toggleNavbar={setToggleNavbar} />
-      ) : (
-        <section className="flex flex-col p-0 m-0 w-full">
-          <Profile toggleNavbar={setToggleNavbar} />
-          <About />
-        </section>
-      )}
+      <section className="flex flex-col p-0 m-0 w-full">
+        {renderScroll ? <ScrollUpButton /> : <></>}
+        <Profile />
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
+      </section>
     </main>
   );
 }

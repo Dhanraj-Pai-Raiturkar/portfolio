@@ -1,13 +1,15 @@
 import React from "react";
+import { navigateHandler } from "../utils/scroll";
 
 export type NavbarProps = {
   toggleNavbar?: Function;
 };
 
 const Navbar: React.FC<NavbarProps> = ({ toggleNavbar }) => {
-  const clickHandler = () => {
+  const toggleMenuHandler = () => {
     if (toggleNavbar) toggleNavbar((prev: boolean) => !prev);
   };
+
   return (
     <>
       <div className="hidden sm:flex justify-around w-full">
@@ -16,16 +18,32 @@ const Navbar: React.FC<NavbarProps> = ({ toggleNavbar }) => {
         </div>
         <div className="flex">
           <ul className="list-none flex">
-            <li className="flex-1 mx-3 hover:cursor-pointer hover:text-slate-950 text-slate-600">
+            <li
+              id="link_about"
+              className="flex-1 mx-3 hover:cursor-pointer hover:text-slate-950 text-slate-600"
+              onClick={navigateHandler}
+            >
               About
             </li>
-            <li className="flex-1 mx-3 hover:cursor-pointer hover:text-slate-950 text-slate-600">
+            <li
+              id="link_experience"
+              className="flex-1 mx-3 hover:cursor-pointer hover:text-slate-950 text-slate-600"
+              onClick={navigateHandler}
+            >
               Experience
             </li>
-            <li className="flex-1 mx-3 hover:cursor-pointer hover:text-slate-950 text-slate-600">
+            <li
+              id="link_projects"
+              className="flex-1 mx-3 hover:cursor-pointer hover:text-slate-950 text-slate-600"
+              onClick={navigateHandler}
+            >
               Projects
             </li>
-            <li className="flex-1 mx-3 hover:cursor-pointer hover:text-slate-950 text-slate-600">
+            <li
+              id="link_contact"
+              className="flex-1 mx-3 hover:cursor-pointer hover:text-slate-950 text-slate-600"
+              onClick={navigateHandler}
+            >
               Contact
             </li>
           </ul>
@@ -34,7 +52,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggleNavbar }) => {
       <div className="flex justify-start items-center  sm:hidden w-full mb-4">
         <div
           className="flex flex-col text-2xl mx-3 font-semibold hover:cursor-pointer"
-          onClick={clickHandler}
+          onClick={toggleMenuHandler}
         >
           <div className="h-1 w-8 bg-slate-500 mb-1"></div>
           <div className="h-1 w-8 bg-slate-500 mb-1"></div>

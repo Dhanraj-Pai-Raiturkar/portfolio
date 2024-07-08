@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section className="w-full flex justify-center">
+    <section className="w-full flex justify-center" id="about">
       <div className="flex flex-col min-h-screen w-full">
         <div className="flex flex-col justify-center items-center w-full">
           <span className="text-center sm:text-sm font-medium text-slate-600 mt-2">
