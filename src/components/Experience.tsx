@@ -11,7 +11,7 @@ const Experience = () => {
           </span>
           <span className="text-center text-3xl font-bold">Experience</span>
         </div>
-        <div className="flex h-full w-full p-4 justify-start w-full items-center border-2 border-red-400 p-4 flex flex-col">
+        <div className="flex h-full w-full p-4 justify-start w-full items-center p-4 flex flex-col">
           {/* <span>coming soon...</span> */}
           {data.map((experience) => {
             const image = experience.image;
