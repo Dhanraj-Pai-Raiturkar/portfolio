@@ -24,12 +24,12 @@ function App() {
   return (
     <main className="bg-gradient-to-b from-slate-50 to-stone-300 m-0 p-0 border-0">
       <section className="flex flex-col p-0 m-0 w-full">
-        {renderScroll ? <ScrollUpButton /> : <></>}
         <Profile />
         <About />
         <Experience />
         <Projects />
         <Contact />
+        {renderScroll ? <ScrollUpButton /> : <></>}
       </section>
     </main>
   );
