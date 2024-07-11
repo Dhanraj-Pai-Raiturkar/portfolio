@@ -26,5 +26,6 @@ export const navigateHandler = (e: React.SyntheticEvent) => {
     default:
       top = 0;
   }
+  console.log("scrollTo", top);
   scrollTo(top, "smooth");
 };

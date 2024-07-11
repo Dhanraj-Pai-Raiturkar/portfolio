@@ -49,14 +49,14 @@ const Navbar: React.FC<NavbarProps> = ({ toggleNavbar }) => {
           </ul>
         </div>
       </div>
-      <div className="flex justify-start items-center  sm:hidden w-full mb-4">
+      <div className="flex justify-start items-center  sm:hidden w-full">
         <div
           className="flex flex-col text-2xl mx-3 font-semibold hover:cursor-pointer"
           onClick={toggleMenuHandler}
         >
-          <div className="h-1 w-8 bg-slate-500 mb-1"></div>
-          <div className="h-1 w-8 bg-slate-500 mb-1"></div>
-          <div className="h-1 w-8 bg-slate-500 mb-1"></div>
+          <div className="h-1 w-8 bg-slate-900 mb-1"></div>
+          <div className="h-1 w-8 bg-slate-900 mb-1"></div>
+          <div className="h-1 w-8 bg-slate-900 mb-1"></div>
         </div>
       </div>
     </>

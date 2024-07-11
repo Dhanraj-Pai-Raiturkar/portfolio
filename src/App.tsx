@@ -27,7 +27,7 @@ function App() {
         <Profile />
         <About />
         <Experience />
-        <Projects />
+        {/* <Projects /> */}
         <Contact />
         {renderScroll ? <ScrollUpButton /> : <></>}
       </section>

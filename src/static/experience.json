@@ -1,6 +1,6 @@
 [
   {
-    "image": "icon-js.jpg",
+    "image": "icon-js.webp",
     "title": "Javascript",
     "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, cum. Ea, nesciunt quod minus aliquid assumenda eum facere tenetur quidem dolores qui, natus dolorem illum a reprehenderit debitis commodi eaque."
   },
@@ -10,7 +10,7 @@
     "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, cum. Ea, nesciunt quod minus aliquid assumenda eum facere tenetur quidem dolores qui, natus dolorem illum a reprehenderit debitis commodi eaque."
   },
   {
-    "image": "icon-node.png",
+    "image": "icon-node.webp",
     "title": "NodeJS",
     "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, cum. Ea, nesciunt quod minus aliquid assumenda eum facere tenetur quidem dolores qui, natus dolorem illum a reprehenderit debitis commodi eaque."
   },
