@@ -20,21 +20,21 @@ const Navbar: React.FC<NavbarProps> = ({ toggleNavbar }) => {
           <ul className="list-none flex">
             <li
               id="link_about"
-              className="flex-1 mx-3 hover:cursor-pointer hover:text-slate-950 text-slate-600"
+              className="flex-1 mx-3 hover:cursor-pointer hover:text-slate-950 text-slate-600 md:text-lg"
               onClick={navigateHandler}
             >
               About
             </li>
             <li
               id="link_experience"
-              className="flex-1 mx-3 hover:cursor-pointer hover:text-slate-950 text-slate-600"
+              className="flex-1 mx-3 hover:cursor-pointer hover:text-slate-950 text-slate-600 md:text-lg"
               onClick={navigateHandler}
             >
               Experience
             </li>
             <li
               id="link_projects"
-              className="flex-1 mx-3 hover:cursor-pointer hover:text-slate-950 text-slate-600"
+              className="flex-1 mx-3 hover:cursor-pointer hover:text-slate-950 text-slate-600 md:text-lg"
               onClick={navigateHandler}
             >
               Projects

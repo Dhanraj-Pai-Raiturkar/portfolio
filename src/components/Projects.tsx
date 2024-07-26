@@ -1,6 +1,9 @@
 const Projects = () => {
   return (
-    <section className="flex flex-col h-full h-screen" id="projects">
+    <section
+      className="flex flex-col h-full h-screen mb-28 md:mb-0"
+      id="projects"
+    >
       <div className="flex flex-col min-h-screen w-full">
         <div className="flex flex-col justify-center items-center w-full">
           <span className="text-center sm:text-sm font-medium text-slate-600 mt-2">
