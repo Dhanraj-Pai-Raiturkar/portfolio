@@ -1,7 +1,6 @@
 import Profile from "./components/Profile";
 import About from "./components/About";
 import Experience from "./components/Experience";
-import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import ScrollUpButton from "./components/ScrollUpButton";
 import { useEffect, useState } from "react";

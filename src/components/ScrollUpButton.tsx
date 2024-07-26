@@ -9,7 +9,7 @@ const ScrollUpButton = () => {
       className="fixed bottom-0 right-0 bg-slate-900 bg-opacity-30 rounded-full h-14 w-14 m-4 hover:cursor-pointer"
       onClick={handleScrollUp}
     >
-      <img src="icon-scrollUp.png" />
+      <img src="icon-scrollUp.png" alt="icon" />
     </button>
   );
 };

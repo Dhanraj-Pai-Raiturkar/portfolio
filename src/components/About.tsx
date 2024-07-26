@@ -13,7 +13,11 @@ const About = () => {
             <div className="flex w-full justify-center sm:flex-row flex-col items-center">
               <div className="border-2 border-slate-400 flex flex-col justify-center items-center py-4 px-2 w-full sm:w-3/4 lg:w-1/4 rounded-xl m-4 sm:min-h-60 md:min-h-44">
                 <span className="h-10 w-10">
-                  <img className="w-full h-full" src="icon-education.png" />
+                  <img
+                    className="w-full h-full"
+                    src="icon-education.png"
+                    alt="icon"
+                  />
                 </span>
                 <span className="text-center sm:text-lg font-medium text-slate-900">
                   Experience
@@ -30,6 +34,7 @@ const About = () => {
                   <img
                     className="w-full h-full bg-transparent"
                     src="icon-education.png"
+                    alt="icon"
                   />
                 </span>
                 <span className="text-center sm:text-lg font-medium text-slate-900">

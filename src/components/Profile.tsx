@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import { navigateHandler } from "../utils/scroll";
 
@@ -53,6 +53,7 @@ const Profile: React.FC = () => {
               <img
                 src="./profile.jpg"
                 className="border-1 border-slate-900 object-cover rounded-full h-56 w-56 sm:h-72 sm:w-72"
+                alt="profile_image"
               />
             </div>
             <div className="flex content-center justify-center h-full sm:items-center items-start px-10 py-2">
