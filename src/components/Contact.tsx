@@ -18,6 +18,7 @@ const Contact = () => {
                 key={`experience_${index}`}
                 href={record?.link}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="max-[500px]:h-40 h-56 md:h-40 lg:h-44 xl:h-56 flex justify-center items-center"
               >
                 <img
