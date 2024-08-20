@@ -5,7 +5,7 @@ import { navigateHandler } from "../utils/scroll";
 const Profile: React.FC = () => {
   const [toggleNavbar, setToggleNavbar] = useState<boolean>(false);
   const navigate = (e: React.SyntheticEvent) => {
-    setToggleNavbar((prev: boolean) => !prev);
+    toggleNavbar && setToggleNavbar((prev: boolean) => !prev);
     navigateHandler(e);
   };
   return (
@@ -68,10 +68,16 @@ const Profile: React.FC = () => {
                   MERN Stack Developer
                 </span>
                 <div className="flex justify-items-center content-center justify-center mt-2">
-                  <button className="border-2 border-slate-700 rounded-full py-2 px-4 mx-2 text-sm font-medium text-slate-900">
-                    Download CV
-                  </button>
-                  <button className=" border-slate-700 rounded-full py-2 px-4 mx-2 text-sm font-medium text-slate-50 bg-slate-900">
+                  <a href="./resume.pdf">
+                    <button className="border-2 border-slate-700 rounded-full py-2 px-4 mx-2 text-sm font-medium text-slate-900 hover:bg-slate-200">
+                      Download CV
+                    </button>
+                  </a>
+                  <button
+                    id="link_contact"
+                    onClick={navigate}
+                    className=" border-slate-700 rounded-full py-2 px-4 mx-2 text-sm font-medium text-slate-50 bg-slate-900 hover:bg-slate-200 hover:text-slate-900 hover:border-2 hover:border-slate-700"
+                  >
                     Contact Info
                   </button>
                 </div>

@@ -1,25 +1,31 @@
 [
   {
+    "title": "Github",
     "image": "github.jpg",
     "link": "https://github.com/Dhanraj-Pai-Raiturkar"
   },
   {
-    "image": "facebook.jpg",
-    "link": "https://www.facebook.com/dhanraj.pairaiturkar/"
-  },
-  {
-    "image": "twitter.jpg",
-    "link": "https://x.com/RaiturkarPai?t=YRJc5EiiGgwt0ACtMaqMyg&s=09"
-  },
-  {
+    "title": "LinkedIn",
     "image": "linkedin.jpg",
     "link": "https://in.linkedin.com/in/dhanraj-pai-raiturkar-557282184?trk=people_directory"
   },
   {
+    "title": "Twitter",
+    "image": "twitter.jpg",
+    "link": "https://x.com/RaiturkarPai?t=YRJc5EiiGgwt0ACtMaqMyg&s=09"
+  },
+  {
+    "title": "Facebook",
+    "image": "facebook.jpg",
+    "link": "https://www.facebook.com/dhanraj.pairaiturkar/"
+  },
+  {
+    "title": "Youtube",
     "image": "youtube.jpg",
     "link": "https://youtube.com/@dhanrajpairaiturkar1240?si=KeQAn0LJv7RcxYVf"
   },
   {
+    "title": "Instagram",
     "image": "instagram.jpg",
     "link": "https://www.instagram.com/dhanraj_pai_raiturkar/?hl=en"
   }

@@ -61,27 +61,29 @@ const About = () => {
                   Education
                 </span>
                 <span className="text-center sm:text-sm font-medium text-slate-600">
-                  BCA Bachelors Degree
+                  {/* BCA Bachelors Degree */}
+                  Bachelor of Computer Applications
                 </span>
                 <span className="text-center sm:text-sm font-medium text-slate-600">
-                  MCA Masters Degree
+                  Master of Computer Applications
                 </span>
               </div>
               <p className="text-center w-full text-lg font-medium text-slate-600 sm:w-3/4 w-full">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt iusto accusantium facilis cumque ab fugiat laboriosam
-                culpa suscipit hic, ipsa aliquam veritatis! Laudantium
-                blanditiis modi porro quas, libero tempora voluptas. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Nesciunt iusto
+                I am Dhanraj Pai Raiturkar, a dedicated software engineer with a
+                strong academic foundation in computer applications. My journey
+                in the world of technology began at Shree Damodar College of
+                Commerce and Economics, Goa, where I earned my Bachelor's degree
+                in Computer Applications. During this time, I gained a solid
+                grounding in software development
                 <br />
                 <br />
-                accusantium facilis cumque ab fugiat laboriosam culpa suscipit
-                hic, ipsa aliquam veritatis! Laudantium blanditiis modi porro
-                quas, libero tempora voluptas. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Nesciunt iusto accusantium facilis
-                cumque ab fugiat laboriosam culpa suscipit hic, ipsa aliquam
-                veritatis! Laudantium blanditiis modi porro quas, libero tempora
-                voluptas.
+                Eager to expand my knowledge and expertise, I pursued a Master's
+                degree in Computer Applications at Goa University. Here, I
+                focused on advanced topics such as data structures, algorithms,
+                and database management, achieving a strong academic record that
+                reflects my commitment to learning and excellence. My education
+                has equipped me with the skills and knowledge necessary to
+                navigate the ever-evolving field of software development.
               </p>
             </div>
             <div className="w-full flex items-center justify-center p-4 flex-col">
@@ -100,24 +102,33 @@ const About = () => {
                   2+ years
                 </span>
                 <span className="text-center sm:text-sm font-medium text-slate-600">
-                  JS MERN Stack Development
+                  Full Stack Javascript Developer
                 </span>
               </div>
               <p className="text-center w-full text-lg font-medium text-slate-600 sm:w-3/4 w-full">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt iusto accusantium facilis cumque ab fugiat laboriosam
-                culpa suscipit hic, ipsa aliquam veritatis! Laudantium
-                blanditiis modi porro quas, libero tempora voluptas. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Nesciunt iusto
+                As an Associate Software Engineer at Zapcom, Bengaluru, I have
+                accumulated two years of extensive experience in full-stack
+                development. My journey began with a six-month internship, where
+                I quickly transitioned from a shadow resource to a key
+                contributor in various projects, working with technologies like
+                JavaScript, TypeScript, AngularJS, ReactJS, and NodeJS.
                 <br />
                 <br />
-                accusantium facilis cumque ab fugiat laboriosam culpa suscipit
-                hic, ipsa aliquam veritatis! Laudantium blanditiis modi porro
-                quas, libero tempora voluptas. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Nesciunt iusto accusantium facilis
-                cumque ab fugiat laboriosam culpa suscipit hic, ipsa aliquam
-                veritatis! Laudantium blanditiis modi porro quas, libero tempora
-                voluptas.
+                In my full-time role, I’ve led the development of several
+                critical applications, with a focus on building scalable,
+                serverless solutions using AWS. My work includes:
+                <br />
+                <br />
+                <b>Frontend Development:</b> Crafting dynamic, responsive web
+                applications using JavaScript, TypeScript, jQuery, HTML, CSS,
+                React, and Angular. My work emphasizes creating user-friendly
+                interfaces and maintaining a high standard of code quality.
+                <br />
+                <br />
+                <b>Backend and API Development:</b> Building scalable, RESTful
+                APIs using NodeJS, Express, and AWS serverless technologies. My
+                contributions include designing and optimizing backend systems
+                that are secure, efficient, and maintainable.
               </p>
             </div>
           </div>
