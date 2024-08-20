@@ -68,7 +68,7 @@ const About = () => {
                   Master of Computer Applications
                 </span>
               </div>
-              <p className="text-center w-full text-lg font-medium text-slate-600 sm:w-3/4 w-full">
+              <p className="text-center w-full text-md font-medium text-slate-600 sm:w-3/4 w-full">
                 I am Dhanraj Pai Raiturkar, a dedicated software engineer with a
                 strong academic foundation in computer applications. My journey
                 in the world of technology began at Shree Damodar College of
@@ -105,7 +105,7 @@ const About = () => {
                   Full Stack Javascript Developer
                 </span>
               </div>
-              <p className="text-center w-full text-lg font-medium text-slate-600 sm:w-3/4 w-full">
+              <p className="text-center w-full text-md font-medium text-slate-600 sm:w-3/4 w-full">
                 As an Associate Software Engineer at Zapcom, Bengaluru, I have
                 accumulated two years of extensive experience in full-stack
                 development. My journey began with a six-month internship, where
