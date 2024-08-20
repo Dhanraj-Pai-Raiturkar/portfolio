@@ -30,7 +30,7 @@ const Contact = () => {
             />
             <button
               id="submit_form"
-              className="my-2 border-slate-700 rounded-full py-2 px-4 mx-2 text-sm font-medium text-slate-50 bg-slate-900 hover:bg-slate-200 hover:text-slate-900 hover:border-2 hover:border-slate-700"
+              className="my-2 border-slate-700 rounded-full py-2 px-4 mx-2 text-sm font-medium text-slate-50 bg-slate-900 hover:bg-slate-700"
             >
               Submit
             </button>

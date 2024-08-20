@@ -41,7 +41,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggleNavbar }) => {
             </li>
             <li
               id="link_contact"
-              className="flex-1 mx-3 hover:cursor-pointer hover:text-slate-950 text-slate-600"
+              className="flex-1 mx-3 hover:cursor-pointer hover:text-slate-950 text-slate-600 md:text-lg"
               onClick={navigateHandler}
             >
               Contact
