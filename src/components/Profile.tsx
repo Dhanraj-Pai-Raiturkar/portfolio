@@ -20,7 +20,7 @@ const Profile: React.FC = () => {
             >
               About
             </li>
-            <li
+            {/* <li
               id="link_experience"
               className="text-center my-10 text-slate-900 font-medium text-xl"
               onClick={navigate}
@@ -33,7 +33,7 @@ const Profile: React.FC = () => {
               onClick={navigate}
             >
               Projects
-            </li>
+            </li> */}
             <li
               id="link_contact"
               className="text-center my-10 text-slate-900 font-medium text-xl"
