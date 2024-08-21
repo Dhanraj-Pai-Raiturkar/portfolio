@@ -65,7 +65,7 @@ const Profile: React.FC = () => {
                   Dhanraj Pai Raiturkar
                 </span>
                 <span className="text-center text-lg font-medium text-slate-600 mt-2">
-                  MERN Stack Developer
+                  Full Stack Web Developer
                 </span>
                 <div className="flex justify-items-center content-center justify-center mt-2">
                   <a href="./resume.pdf">
