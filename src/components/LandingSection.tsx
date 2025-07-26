@@ -1,5 +1,13 @@
-import { Avatar, Box, Button, Grid, Typography } from "@mui/material";
+import {
+  Avatar,
+  Box,
+  Button,
+  Grid,
+  IconButton,
+  Typography,
+} from "@mui/material";
 import ProfilePic from "../assets/profilePic.png";
+import { socialMediaLinks, type SocialMediaLink } from "../constants";
 
 const LandingSection = () => {
   return (
@@ -9,7 +17,6 @@ const LandingSection = () => {
       alignItems="center"
       container
       flexDirection={{ xs: "column-reverse", md: "row" }}
-      px={{ xs: 2, sm: 4 }}
       py={{ xs: 4, sm: 10 }}
       gap={2}
     >
@@ -56,22 +63,34 @@ const LandingSection = () => {
         </Grid>
         <Grid py={2}>
           <Typography>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-            reiciendis a consectetur laborum maiores sunt eius eaque debitis
-            atque iste delectus, deserunt nobis voluptatibus incidunt doloribus
-            cupiditate enim illum aliquid!
+            A passionate software engineer based in Bangalore, India. I
+            specialize in building clean, responsive, and high-performance web
+            applications using modern technologies like React, TypeScript, and
+            Node.js.
           </Typography>
         </Grid>
         <Grid gap={2} display="flex" justifyContent="start" alignItems="center">
           <Button variant="contained" color="primary">
             Contact Me
           </Button>
-          <Button variant="outlined" color="primary">
+          <Button
+            href="/resume.pdf"
+            variant="outlined"
+            color="primary"
+            component="a"
+            download
+          >
             Download CV
           </Button>
         </Grid>
       </Grid>
-      <Grid flex={6} display="flex" justifyContent="center" alignItems="center">
+      <Grid
+        flex={6}
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        flexDirection="column"
+      >
         <Box
           width={{ xs: "250px", md: "350px" }}
           height={{ xs: "250px", md: "350px" }}
@@ -107,6 +126,15 @@ const LandingSection = () => {
             />
           </Box>
         </Box>
+        <Grid p={2}>
+          {socialMediaLinks.map((socialMediaLink: SocialMediaLink) => {
+            return (
+              <IconButton target="_blank" href={socialMediaLink.link}>
+                {socialMediaLink.icon}
+              </IconButton>
+            );
+          })}
+        </Grid>
       </Grid>
     </Grid>
   );
