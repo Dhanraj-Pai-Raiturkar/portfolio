@@ -1,65 +1,68 @@
-import React from "react";
-import { navigateHandler } from "../utils/scroll";
+import { Grid, List, ListItemButton, Typography } from "@mui/material";
+import { navItems, type NavItem } from "../constants";
 
-export type NavbarProps = {
-  toggleNavbar?: Function;
-};
-
-const Navbar: React.FC<NavbarProps> = ({ toggleNavbar }) => {
-  const toggleMenuHandler = () => {
-    if (toggleNavbar) toggleNavbar((prev: boolean) => !prev);
+const Navbar = () => {
+  const handleNavigation = (scrollId: string) => {
+    if (scrollId) {
+      const element = document.getElementById(scrollId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
   };
 
   return (
-    <>
-      <div className="hidden sm:flex justify-around w-full">
-        <div className="flex text-2xl mx-3 font-semibold hover:cursor-pointer">
-          Dhanraj
-        </div>
-        <div className="flex">
-          <ul className="list-none flex">
-            <li
-              id="link_about"
-              className="flex-1 mx-3 hover:cursor-pointer hover:text-slate-950 text-slate-600 md:text-lg"
-              onClick={navigateHandler}
-            >
-              About
-            </li>
-            {/* <li
-              id="link_experience"
-              className="flex-1 mx-3 hover:cursor-pointer hover:text-slate-950 text-slate-600 md:text-lg"
-              onClick={navigateHandler}
-            >
-              Experience
-            </li> */}
-            {/* <li
-              id="link_projects"
-              className="flex-1 mx-3 hover:cursor-pointer hover:text-slate-950 text-slate-600 md:text-lg"
-              onClick={navigateHandler}
-            >
-              Projects
-            </li> */}
-            <li
-              id="link_contact"
-              className="flex-1 mx-3 hover:cursor-pointer hover:text-slate-950 text-slate-600 md:text-lg"
-              onClick={navigateHandler}
-            >
-              Contact
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="flex justify-start items-center  sm:hidden w-full">
-        <div
-          className="flex flex-col text-2xl mx-3 font-semibold hover:cursor-pointer"
-          onClick={toggleMenuHandler}
-        >
-          <div className="h-1 w-8 bg-slate-900 mb-1"></div>
-          <div className="h-1 w-8 bg-slate-900 mb-1"></div>
-          <div className="h-1 w-8 bg-slate-900 mb-1"></div>
-        </div>
-      </div>
-    </>
+    <Grid
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      width="100%"
+      py={2}
+    >
+      <Grid
+        container
+        display="flex"
+        flexDirection={{ xs: "column", sm: "row" }}
+        justifyContent="space-between"
+        alignItems="center"
+        width="100%"
+      >
+        <Grid>
+          <Typography
+            sx={{ opacity: 0.75, cursor: "pointer" }}
+            fontWeight={900}
+            fontFamily="Bebas Neue"
+            variant="h4"
+          >
+            Dev Dhanraj
+          </Typography>
+        </Grid>
+        <Grid>
+          <List component="nav" sx={{ display: "flex" }}>
+            {navItems.map((navItem: NavItem) => {
+              return (
+                <ListItemButton
+                  sx={{
+                    px: { xs: 1, sm: 1.4, md: 2, lg: 3 },
+                    cursor: "pointer",
+                  }}
+                  onClick={() => handleNavigation(navItem.scrollId)}
+                >
+                  {navItem.icon}
+                  <Typography
+                    sx={{ opacity: 0.75 }}
+                    variant="subtitle2"
+                    ml={0.3}
+                  >
+                    {navItem.label}
+                  </Typography>
+                </ListItemButton>
+              );
+            })}
+          </List>
+        </Grid>
+      </Grid>
+    </Grid>
   );
 };
 

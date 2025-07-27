@@ -1,36 +1,22 @@
-import Profile from "./components/Profile";
-import About from "./components/About";
-// import Experience from "./components/Experience";
-import Contact from "./components/Contact";
-import ScrollUpButton from "./components/ScrollUpButton";
-import { useEffect, useState } from "react";
+import { Grid } from "@mui/material";
+import Navbar from "./components/Navbar";
+import LandingSection from "./components/LandingSection";
+import AboutSection from "./components/AboutSection";
+import CareerSection from "./components/CareerSection";
 
 function App() {
-  const [renderScroll, setRenderScroll] = useState<boolean>(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.pageYOffset > 500) {
-        setRenderScroll(true);
-      } else {
-        setRenderScroll(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
-    <main className="m-0 p-0 border-0">
-      <section className="flex flex-col p-0 m-0 w-full">
-        <Profile />
-        <About />
-        {/* <Experience /> */}
-        {/* <Projects /> */}
-        <Contact />
-        {renderScroll ? <ScrollUpButton /> : <></>}
-      </section>
-    </main>
+    <Grid
+      width="100vw"
+      display="flex"
+      flexDirection="column"
+      px={{ xs: 2, sm: 4, lg: 8, xl: 12 }}
+    >
+      <Navbar />
+      <LandingSection />
+      <AboutSection />
+      <CareerSection />
+    </Grid>
   );
 }
 
