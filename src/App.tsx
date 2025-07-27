@@ -2,6 +2,7 @@ import { Grid } from "@mui/material";
 import Navbar from "./components/Navbar";
 import LandingSection from "./components/LandingSection";
 import AboutSection from "./components/AboutSection";
+import CareerSection from "./components/CareerSection";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <LandingSection />
       <AboutSection />
+      <CareerSection />
     </Grid>
   );
 }

@@ -22,6 +22,10 @@ import express from "../assets/express-js.png";
 import csharp from "../assets/csharp.png";
 import dotnet from "../assets/dotnet.png";
 import jest from "../assets/jest.png";
+import bcaLogo from "../assets/bcaLogo.jpg";
+import mcaLogo from "../assets/mcaLogo.jpeg";
+import zapcomLogo from "../assets/zapcom.png";
+import byLogo from "../assets/by.jpg";
 
 type mark = {
   value: number;
@@ -38,11 +42,20 @@ export type NavItem = {
   id: string;
   label: string;
   icon: ReactNode;
+  scrollId: string;
 };
 
 export type SocialMediaLink = {
   link: string;
   icon: ReactNode;
+};
+
+export type CareerTimeline = {
+  title: string;
+  subtitle: string;
+  duration: string;
+  period: string;
+  logo: string;
 };
 
 export const INTIAL_NUMBER_OF_SKILLS = 5;
@@ -52,21 +65,25 @@ export const navItems: NavItem[] = [
     id: "home",
     label: "Home",
     icon: <HomeIcon fontSize="small" />,
+    scrollId: "",
   },
   {
     id: "about",
     label: "About",
     icon: <FeedIcon fontSize="small" />,
-  },
-  {
-    id: "career",
-    label: "Career",
-    icon: <WorkIcon fontSize="small" />,
+    scrollId: "about",
   },
   {
     id: "skills",
     label: "Skills",
     icon: <LayersIcon fontSize="small" />,
+    scrollId: "skills",
+  },
+  {
+    id: "career",
+    label: "Career",
+    icon: <WorkIcon fontSize="small" />,
+    scrollId: "career",
   },
 ];
 
@@ -180,5 +197,43 @@ export const skills: skill[] = [
     label: ".NET",
     logo: dotnet,
     proficiency: 44,
+  },
+];
+
+export const careerTimeline: CareerTimeline[] = [
+  {
+    title: "Graduation",
+    subtitle: "Bachelor of Computer Applications",
+    duration: "Jun 2016 - Jun 2019",
+    period: "3 years",
+    logo: bcaLogo,
+  },
+  {
+    title: "Post Graduation",
+    subtitle: "Master of Computer Applications",
+    duration: "Jun 2019 - Jul 2022",
+    period: "3 years 1 month",
+    logo: mcaLogo,
+  },
+  {
+    title: "ZapCom Group Inc",
+    subtitle: "Internship",
+    duration: "Jan 2022 - Jul 2022",
+    period: "6 months",
+    logo: zapcomLogo,
+  },
+  {
+    title: "ZapCom Group Inc",
+    subtitle: "Associate Software Engineer",
+    duration: "Jul 2022 - Oct 2024",
+    period: "2 years 4 months",
+    logo: zapcomLogo,
+  },
+  {
+    title: "BlueYonder (Panasonic)",
+    subtitle: "Software Engineer II",
+    duration: "Oct 2024 - Present",
+    period: "Current",
+    logo: byLogo,
   },
 ];

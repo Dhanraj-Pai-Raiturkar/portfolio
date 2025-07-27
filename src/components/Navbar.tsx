@@ -2,6 +2,15 @@ import { Grid, List, ListItemButton, Typography } from "@mui/material";
 import { navItems, type NavItem } from "../constants";
 
 const Navbar = () => {
+  const handleNavigation = (scrollId: string) => {
+    if (scrollId) {
+      const element = document.getElementById(scrollId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  };
+
   return (
     <Grid
       display="flex"
@@ -37,6 +46,7 @@ const Navbar = () => {
                     px: { xs: 1, sm: 1.4, md: 2, lg: 3 },
                     cursor: "pointer",
                   }}
+                  onClick={() => handleNavigation(navItem.scrollId)}
                 >
                   {navItem.icon}
                   <Typography

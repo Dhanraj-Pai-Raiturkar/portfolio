@@ -55,12 +55,19 @@ const AboutSection = () => {
   const initialList = skills.slice(0, INTIAL_NUMBER_OF_SKILLS);
   const remaining = skills.slice(INTIAL_NUMBER_OF_SKILLS, skills.length);
 
-  console.log(
-    "skills",
-    skills.length,
-    INTIAL_NUMBER_OF_SKILLS,
-    skills.length - INTIAL_NUMBER_OF_SKILLS
-  );
+  const handleCollapseClick = () => {
+    setShowAll((prev) => {
+      const newValue = !prev;
+      if (!newValue) {
+        const element = document.getElementById("skills");
+        if (element) {
+          element.scrollIntoView({ behavior: "instant", block: "start" });
+        }
+      }
+      return newValue;
+    });
+  };
+
   return (
     <Grid
       container
@@ -68,15 +75,17 @@ const AboutSection = () => {
       justifyContent="center"
       alignItems="start"
       flexDirection={{ xs: "column", md: "row" }}
-      py={{ xs: 4, sm: 10 }}
+      py={{ xs: 4 }}
     >
       <Grid flex={6}>
-        <Typography py={1} variant="h2" display={{ xs: "none", sm: "flex" }}>
-          About Me
-        </Typography>
-        <Typography py={1} variant="h3" display={{ xs: "flex", sm: "none" }}>
-          About Me
-        </Typography>
+        <Box id="about">
+          <Typography py={1} variant="h2" display={{ xs: "none", sm: "flex" }}>
+            About Me
+          </Typography>
+          <Typography py={1} variant="h3" display={{ xs: "flex", sm: "none" }}>
+            About Me
+          </Typography>
+        </Box>
         <Grid py={2} container spacing={2}>
           <Grid>
             <Chip label={<Typography>👨‍💻 3.5+ Years Experience</Typography>} />
@@ -154,9 +163,11 @@ const AboutSection = () => {
         {initialList.map((skill: skill) => {
           return (
             <Box
+              id="skills"
               component="span"
               key={skill.label}
               width={{ xs: "100%", md: "70%" }}
+              sx={{ scrollMarginTop: "100px" }}
             >
               <Chip
                 label={
@@ -241,7 +252,7 @@ const AboutSection = () => {
         {remaining.length > 0 && (
           <Chip
             label={showAll ? "Show Less ▲" : "Show More ▼"}
-            onClick={() => setShowAll((prev) => !prev)}
+            onClick={handleCollapseClick}
             sx={{ cursor: "pointer", fontWeight: 500 }}
           />
         )}
