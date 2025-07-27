@@ -1,11 +1,4 @@
 import {
-  Fastfood,
-  FoodBank,
-  Hotel,
-  LaptopMac,
-  Repeat,
-} from "@mui/icons-material";
-import {
   Timeline,
   TimelineConnector,
   TimelineContent,
