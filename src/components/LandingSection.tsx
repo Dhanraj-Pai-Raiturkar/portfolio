@@ -10,6 +10,12 @@ import ProfilePic from "../assets/profilePic.png";
 import { socialMediaLinks, type SocialMediaLink } from "../constants";
 
 const LandingSection = () => {
+  const handleContactMeNav = () => {
+    const element = document.getElementById("contact");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
     <Grid
       display="flex"
@@ -70,8 +76,12 @@ const LandingSection = () => {
           </Typography>
         </Grid>
         <Grid gap={2} display="flex" justifyContent="start" alignItems="center">
-          <Button variant="contained" color="primary">
-            Contact Me
+          <Button
+            onClick={handleContactMeNav}
+            variant="contained"
+            color="primary"
+          >
+            Let’s Connect
           </Button>
           <Button
             href="/resume.pdf"

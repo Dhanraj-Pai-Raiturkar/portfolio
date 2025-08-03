@@ -18,8 +18,9 @@ const CareerSection = () => {
       display="flex"
       justifyContent="center"
       flexDirection="column"
+      alignItems={{ xs: "start", md: "center" }}
       container
-      py={{ xs: 2 }}
+      py={{ xs: 2, md: 6 }}
     >
       <Grid>
         <Box id="career">

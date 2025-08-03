@@ -61,12 +61,12 @@ export type CareerTimeline = {
 export const INTIAL_NUMBER_OF_SKILLS = 5;
 
 export const navItems: NavItem[] = [
-  {
-    id: "home",
-    label: "Home",
-    icon: <HomeIcon fontSize="small" />,
-    scrollId: "",
-  },
+  // {
+  //   id: "home",
+  //   label: "Home",
+  //   icon: <HomeIcon fontSize="small" />,
+  //   scrollId: "",
+  // },
   {
     id: "about",
     label: "About",
