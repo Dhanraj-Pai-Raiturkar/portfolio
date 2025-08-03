@@ -4,8 +4,10 @@ export const theme = createTheme({
   palette: {
     mode: "dark", // or 'light' based on Figma
     primary: {
-      // main: "#ff6f00", // Orange shade
-      main: "#f09100",
+      main: "#f09100", // original
+      // main: "#93DA97", // green
+      // main: "#EA5B6F", // pink
+      // main: "#8CCDEB", // light blue
     },
     secondary: {
       main: "#212121", // Deep black/grey

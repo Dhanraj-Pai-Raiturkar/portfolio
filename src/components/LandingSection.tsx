@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import ProfilePic from "../assets/profilePic.png";
 import { socialMediaLinks, type SocialMediaLink } from "../constants";
+import { theme } from "../theme";
 
 const LandingSection = () => {
   const handleContactMeNav = () => {
@@ -106,8 +107,7 @@ const LandingSection = () => {
           height={{ xs: "250px", md: "350px" }}
           sx={{
             borderRadius: "50%",
-            background:
-              "conic-gradient(from 180deg at 50% 50%, #ffffff, #ffa726, #ff5722, #ffffff)",
+            background: `conic-gradient(from 180deg at 50% 50%, #ffffff, ${theme.palette.primary.light}, ${theme.palette.primary.main}, #ffffff)`,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -132,6 +132,8 @@ const LandingSection = () => {
                 height: { xs: "230px", md: "330px" },
                 objectFit: "cover",
                 objectPosition: "center top",
+                // backgroundColor: theme.palette.primary.main,
+                background: `linear-gradient(to bottom, ${theme.palette.primary.light}, ${theme.palette.primary.main})`,
               }}
             />
           </Box>
