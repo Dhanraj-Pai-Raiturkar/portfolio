@@ -1,5 +1,4 @@
 import docker from "../assets/docker.png";
-import HomeIcon from "@mui/icons-material/Home";
 import FeedIcon from "@mui/icons-material/Feed";
 import WorkIcon from "@mui/icons-material/Work";
 import LayersIcon from "@mui/icons-material/Layers";
@@ -61,12 +60,6 @@ export type CareerTimeline = {
 export const INTIAL_NUMBER_OF_SKILLS = 5;
 
 export const navItems: NavItem[] = [
-  // {
-  //   id: "home",
-  //   label: "Home",
-  //   icon: <HomeIcon fontSize="small" />,
-  //   scrollId: "",
-  // },
   {
     id: "about",
     label: "About",
